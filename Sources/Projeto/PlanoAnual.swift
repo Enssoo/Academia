@@ -2,7 +2,7 @@ import Foundation
 
 class PlanoAnual: Plano{
 
-    init(nome: String){
+    init(){
         super.init(nome: "Plano Anual (Promocional)")
     }
 
