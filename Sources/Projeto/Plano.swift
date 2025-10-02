@@ -3,7 +3,7 @@ import Foundation
 class Plano{
     var nome: String
 
-    init(nome: nome){
+    init(nome: String){
         self.nome = nome
     }
 

@@ -9,6 +9,6 @@ class AulaPersonal: Aula{
     }
 
     override func getDescricao() -> String {
-        return super.getDescrição() + " - Nome aluno: \(aluno.nome)"
+        return super.getDescricao() + " - Nome aluno: \(aluno.nome)"
     }
 }

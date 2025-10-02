@@ -4,8 +4,13 @@ class AulaColetiva: Aula{
     private (set) var alunosInscritos: [String: Aluno] = [:]
     var capacidadeMaxima: Int
 
-    init(nome: String, instrutor: Instrutor){
+    override init(nome: String, instrutor: Instrutor){
         self.capacidadeMaxima = 25
+        super.init(nome: nome, instrutor: instrutor)
+    }
+
+    init(nome: String, instrutor: Instrutor, capacidadeMaxima: Int){
+        self.capacidadeMaxima = capacidadeMaxima
         super.init(nome: nome, instrutor: instrutor)
     }
 
@@ -15,7 +20,7 @@ class AulaColetiva: Aula{
             return false
         }
 
-        if alunosInscritos.contains(aluno){
+        if alunosInscritos[aluno.matricula] != nil{
             print("\(aluno.nome) já está inscrito!")
             return false
         }

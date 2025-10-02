@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Academia}",
+            "name": "Debug Projeto",
+            "program": "${workspaceFolder:Academia}/.build/debug/Projeto",
+            "preLaunchTask": "swift: Build Debug Projeto"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Academia}",
+            "name": "Release Projeto",
+            "program": "${workspaceFolder:Academia}/.build/release/Projeto",
+            "preLaunchTask": "swift: Build Release Projeto"
+        }
+    ]
+}
